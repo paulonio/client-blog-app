@@ -1,0 +1,48 @@
+@import '../../styles/sass/constants';
+
+.header {
+  background-color: $color-black;
+
+  &__wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: $color-white;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    margin-left: 24px;
+    list-style: none;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & a {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+      transition: 0.3s;
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+}
